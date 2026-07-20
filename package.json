@@ -1,0 +1,25 @@
+{
+  "name": "playwrightautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "regressionsuite": "npx playwright test --project=chromium --grep @regression",
+    "smokesuite": "npx playwright test --project=chromium --grep @smoke",
+    "test": "npx playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@azure/identity": "^4.13.1",
+    "@azure/playwright": "^1.1.6",
+    "@playwright/test": "^1.58.1",
+    "@types/node": "^25.0.10",
+    "allure-playwright": "^3.4.5"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^12.6.0"
+  }
+}
